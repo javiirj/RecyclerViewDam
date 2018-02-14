@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CiudadesRecycler.iml" filepath="$PROJECT_DIR$/CiudadesRecycler.iml" />
+      <module fileurl="file://C:\Users\Javi\Desktop\Repositorios\RecyclerViewDam\CiudadesRecycler\CiudadesRecycler.iml" filepath="C:\Users\Javi\Desktop\Repositorios\RecyclerViewDam\CiudadesRecycler\CiudadesRecycler.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Javi\Desktop\Repositorios\RecyclerViewDam\CiudadesRecycler\app\app.iml" filepath="C:\Users\Javi\Desktop\Repositorios\RecyclerViewDam\CiudadesRecycler\app\app.iml" />
     </modules>
   </component>
 </project>
