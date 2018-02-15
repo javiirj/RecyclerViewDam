@@ -8,6 +8,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 955730f97745b310b2c5d55c983f58f51e95415b
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -16,7 +20,6 @@ public class MyCiudadItemRecyclerViewAdapter extends RecyclerView.Adapter<MyCiud
 
     private Context ctx;
     private final List<Ciudad> mValues;
-    //private final OnListFragmentInteractionListener mListener;
 
     public MyCiudadItemRecyclerViewAdapter(Context context, List<Ciudad> items) {
         ctx = context;
