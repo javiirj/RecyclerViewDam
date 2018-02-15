@@ -1,5 +1,6 @@
 package com.jrogerio.ciudadesrecycler;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -74,6 +75,16 @@ public class MainActivity extends AppCompatActivity {
                 .add(R.id.contenedor, new CiudadItemFragment())
                 .commit();
     }
+
+
+    /*
+    @Override
+    public void onRestaurantClick(Restaurant restaurant) {
+        Intent i = new Intent(this, DetalleRestauranteActivity.class);
+        i.putExtra("nombre", restaurant.getName());
+        startActivity(i);
+    }
+    */
 
 
 }

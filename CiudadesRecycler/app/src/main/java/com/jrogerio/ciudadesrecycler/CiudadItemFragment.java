@@ -24,6 +24,7 @@ public class CiudadItemFragment extends Fragment {
     private int mColumnCount = 1;
     private List<Ciudad> ciudadList;
     MyCiudadItemRecyclerViewAdapter adapter;
+    // IOnRestaurantInteractionListener mListener;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -62,9 +63,39 @@ public class CiudadItemFragment extends Fragment {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
             adapter = new MyCiudadItemRecyclerViewAdapter(getActivity(), ciudadList);
+            // adapter = new MyCiudadItemRecyclerViewAdapter(getActivity(), ciudadList, mListener);
             recyclerView.setAdapter(adapter);
         }
         return view;
     }
 
+    //
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        // Con la siguiente condición me aseguro que el MainActivity
+        // esté implementando la interface IOnRestaurantInteractionListener
+        // o lo que es lo mismo que el MainActivity esté sobreescribiendo
+        // los métodos de esta interface, en este caso el método
+        // onRestaurantClick
+        // De esta manera me aseguro que desde el Adapter cuando
+        // el usuario haga click en un elemento de la Lista
+        // voy a poder invocar al método onRestaurantClick del
+        // MainActivity
+
+        /*
+        if (context instanceof IOnRestaurantInteractionListener) {
+            mListener = (IOnRestaurantInteractionListener) context;
+        } else {
+            throw new RuntimeException();
+        }
+        */
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        // Liberar el recurso, poniendolo a nulo
+        //mListener = null;
+    }
 }

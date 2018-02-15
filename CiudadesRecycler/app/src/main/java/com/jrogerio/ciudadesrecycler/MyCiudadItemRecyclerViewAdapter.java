@@ -16,10 +16,15 @@ public class MyCiudadItemRecyclerViewAdapter extends RecyclerView.Adapter<MyCiud
 
     private Context ctx;
     private final List<Ciudad> mValues;
+    // private IOnRestaurantInteractionListener mListener;
 
+    // public MyCiudadItemRecyclerViewAdapter(Context context,
+    // List<Ciudad> items,
+    // IOnRestaurantInteractionListener listener)
     public MyCiudadItemRecyclerViewAdapter(Context context, List<Ciudad> items) {
         ctx = context;
         mValues = items;
+        // mListener = listener;
     }
 
     @Override
@@ -42,6 +47,15 @@ public class MyCiudadItemRecyclerViewAdapter extends RecyclerView.Adapter<MyCiud
                 .resize(500,150)
                 .centerCrop()
                 .into(holder.imageViewPhoto);
+
+        // Eventos
+        holder.mView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //mListener.OnRestaurantClick(holder.mItem);
+            }
+        });
+
     }
 
     @Override
