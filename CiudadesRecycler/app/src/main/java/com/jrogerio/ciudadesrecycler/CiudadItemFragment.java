@@ -59,13 +59,13 @@ public class CiudadItemFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_ciudaditem_list, container, false);
 
         ciudadList = new ArrayList<>();
-        ciudadList.add(new Ciudad("Sevilla", 690566, "", "Sevilla"));
-        ciudadList.add(new Ciudad("Cádiz", 690566, "", "Cádiz"));
-        ciudadList.add(new Ciudad("Huelva", 690566, "", "Huelva"));
-        ciudadList.add(new Ciudad("Granada", 690566, "", "Granada"));
-        ciudadList.add(new Ciudad("Jaén", 690566, "", "Jaén"));
-        ciudadList.add(new Ciudad("Almería", 690566, "", "Almería"));
-        ciudadList.add(new Ciudad("Córdoba", 690566, "", "Córdoba"));
+        ciudadList.add(new Ciudad("Dos Hermanas", 131855, "http://www.abcdesevilla.es/Media/201306/19/turismo-dh-644x362.jpg", "Sevilla"));
+        ciudadList.add(new Ciudad("Jerez de la Frontera", 212830, "https://d1bvpoagx8hqbg.cloudfront.net/originals/jerez-de-frontera-introduccion-23d11d03118a7aa351688a5ce4865bb2.jpg", "Cádiz"));
+        ciudadList.add(new Ciudad("Huelva", 145468, "https://huelvadenuncia.files.wordpress.com/2013/10/huelva-ibi.jpg", "Huelva"));
+        ciudadList.add(new Ciudad("Loja", 20641, "http://www.spain.info/export/sites/spaininfo/comun/carrusel-recursos/andalucia/d_loja_granada_andalucia_t1800627_01.jpg_369272544.jpg", "Granada"));
+        ciudadList.add(new Ciudad("Úbeda", 34835, "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Ubeda_-_Capilla_del_Salvador_42.jpg/305px-Ubeda_-_Capilla_del_Salvador_42.jpg", "Jaén"));
+        ciudadList.add(new Ciudad("Mojácar", 6490, "https://oleandalucia.com/wp-content/uploads/bfi_thumb/portada-mojacar-e1467801782755-muwwiupl406k1d8vy7qmmf9oqpd5833w4ho0reb3qw.jpg", "Almería"));
+        ciudadList.add(new Ciudad("Montilla", 23365, "https://raeeandalucia.es/sites/default/files/images/montilla.jpg", "Córdoba"));
 
         // Set the adapter
         if (view instanceof RecyclerView) {

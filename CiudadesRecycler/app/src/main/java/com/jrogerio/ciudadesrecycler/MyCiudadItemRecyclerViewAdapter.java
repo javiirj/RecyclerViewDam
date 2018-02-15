@@ -8,16 +8,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.jrogerio.ciudadesrecycler.CiudadItemFragment.OnListFragmentInteractionListener;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-/**
- * {@link RecyclerView.Adapter} that can display a {@link Ciudad} and makes a call to the
- * specified {@link OnListFragmentInteractionListener}.
- * TODO: Replace the implementation with code for your data type.
- */
 public class MyCiudadItemRecyclerViewAdapter extends RecyclerView.Adapter<MyCiudadItemRecyclerViewAdapter.ViewHolder> {
 
     private Context ctx;
@@ -41,7 +35,7 @@ public class MyCiudadItemRecyclerViewAdapter extends RecyclerView.Adapter<MyCiud
         holder.mItem = mValues.get(position);
 
         holder.textViewName.setText(holder.mItem.getNombre());
-        holder.textViewHab.setText(holder.mItem.getHabitantes());
+        holder.textViewHab.setText(String.valueOf(holder.mItem.getHabitantes()));
         holder.textViewProvince.setText(holder.mItem.getProvincia());
 
         Picasso.with(ctx)
